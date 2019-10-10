@@ -1,5 +1,16 @@
 <template>
   <div>
-    <h1>这是 page1 的组件</h1>
+    <h1>这是 {{objData.page}} 的组件</h1>
+<!--    <img src="../../page1-static/page1.jpeg">-->
   </div>
 </template>
+<script>
+  import data from '../../page1-static/page1.js'
+  export default {
+    data () {
+      return {
+        objData: data
+      }
+    }
+  }
+</script>
